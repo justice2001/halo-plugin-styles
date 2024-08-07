@@ -9,10 +9,11 @@ pre:has(.hljs) {
 pre code.hljs {
     position: relative;
     display: block;
-    overflow-x: hidden;
+    overflow-x: auto;
     padding: 35px 20px 20px 20px!important;
 }
-.hljs::before {
+pre:has(.hljs)::before {
+    z-index: 1;
     content: "";
     position: absolute;
     left: 15px;
@@ -30,7 +31,7 @@ pre code.hljs {
     line-height: 12px;
     font-weight: 700;
 }
-.hljs::after {
+pre:has(.hljs)::after {
     content: "JavaScript";
     position: absolute;
     top: 10px;
@@ -65,110 +66,110 @@ pre code.hljs {
     text-align: right;
 }
 
-.hljs.language-html::after,
-.hljs.language-xml::after {
+pre:has(.hljs.language-html)::after,
+pre:has(.hljs.language-xml)::after {
     content: "HTML/XML";
 }
-.hljs.language-javascript::after {
+pre:has(.hljs.language-javascript)::after {
     content: "JavaScript";
 }
-.hljs.language-c::after {
+pre:has(.hljs.language-c)::after {
     content: "C";
 }
-.hljs.language-cpp::after {
+pre:has(.hljs.language-cpp)::after {
     content: "C++";
 }
-.hljs.language-java::after {
+pre:has(.hljs.language-java)::after {
     content: "Java";
 }
-.hljs.language-asp::after {
+pre:has(.hljs.language-asp)::after {
     content: "ASP";
 }
-.hljs.language-actionscript::after {
+pre:has(.hljs.language-actionscript)::after {
     content: "ActionScript/Flash/Flex";
 }
-.hljs.language-bash::after {
+pre:has(.hljs.language-bash)::after {
     content: "Bash";
 }
-.hljs.language-css::after {
+pre:has(.hljs.language-css)::after {
     content: "CSS";
 }
-.hljs.language-asp::after {
+pre:has(.hljs.language-asp)::after {
     content: "ASP";
 }
-.hljs.language-cs::after,
-.hljs.language-csharp::after {
+pre:has(.hljs.language-cs)::after,
+pre:has(.hljs.language-csharp)::after {
     content: "C#";
 }
-.hljs.language-d::after {
+pre:has(.hljs.language-d)::after {
     content: "D";
 }
-.hljs.language-golang::after,
-.hljs.language-go::after {
+pre:has(.hljs.language-golang)::after,
+pre:has(.hljs.language-go)::after {
     content: "Go";
 }
-.hljs.language-json::after {
+pre:has(.hljs.language-json)::after {
     content: "JSON";
 }
-.hljs.language-lua::after {
+pre:has(.hljs.language-lua)::after {
     content: "Lua";
 }
-.hljs.language-less::after {
+pre:has(.hljs.language-less)::after {
     content: "LESS";
 }
-.hljs.language-md::after,
-.hljs.language-markdown::after,
-.hljs.language-mkdown::after,
-.hljs.language-mkd::after {
+pre:has(.hljs.language-md)::after,
+pre:has(.hljs.language-markdown)::after,
+pre:has(.hljs.language-mkdown)::after,
+pre:has(.hljs.language-mkd)::after {
     content: "Markdown";
 }
-.hljs.language-mm::after,
-.hljs.language-objc::after,
-.hljs.language-obj-c::after,
-.hljs.language-objective-c::after {
+pre:has(.hljs.language-mm)::after,
+pre:has(.hljs.language-objc)::after,
+pre:has(.hljs.language-obj-c)::after,
+pre:has(.hljs.language-objective-c)::after {
     content: "Objective-C";
 }
-.hljs.language-php::after {
+pre:has(.hljs.language-php)::after {
     content: "PHP";
 }
-.hljs.language-perl::after,
-.hljs.language-pl::after,
-.hljs.language-pm::after {
+pre:has(.hljs.language-perl)::after,
+pre:has(.hljs.language-pl)::after,
+pre:has(.hljs.language-pm)::after {
     content: "Perl";
 }
-.hljs.language-python::after,
-.hljs.language-py::after,
-.hljs.language-gyp::after,
-.hljs.language-ipython::after {
+pre:has(.hljs.language-python)::after,
+pre:has(.hljs.language-py)::after,
+pre:has(.hljs.language-gyp)::after,
+pre:has(.hljs.language-ipython)::after {
     content: "Python";
 }
-.hljs.language-r::after {
+pre:has(.hljs.language-r)::after {
     content: "R";
 }
-.hljs.language-ruby::after,
-.hljs.language-rb::after,
-.hljs.language-gemspec::after,
-.hljs.language-podspec::after,
-.hljs.language-thor::after,
-.hljs.language-irb::after {
+pre:has(.hljs.language-ruby)::after,
+pre:has(.hljs.language-rb)::after,
+pre:has(.hljs.language-gemspec)::after,
+pre:has(.hljs.language-podspec)::after,
+pre:has(.hljs.language-thor)::after,
+pre:has(.hljs.language-irb)::after {
     content: "Ruby";
 }
-.hljs.language-sql::after {
+pre:has(.hljs.language-sql)::after {
     content: "SQL";
 }
-.hljs.language-sh::after,
-.hljs.language-shell::after,
-.hljs.language-Session::after,
-.hljs.language-shellsession::after,
-.hljs.language-console::after {
+pre:has(.hljs.language-sh)::after,
+pre:has(.hljs.language-shell)::after,
+pre:has(.hljs.language-Session)::after,
+pre:has(.hljs.language-shellsession)::after,
+pre:has(.hljs.language-console)::after {
     content: "Shell";
 }
-.hljs.language-swift::after {
+pre:has(.hljs.language-swift)::after {
     content: "Swift";
 }
-.hljs.language-vb::after {
+pre:has(.hljs.language-vb)::after {
     content: "VB/VBScript";
 }
-.hljs.language-yaml::after {
+pre:has(.hljs.language-yaml)::after {
     content: "YAML";
 }
