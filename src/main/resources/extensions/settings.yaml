@@ -1,0 +1,17 @@
+apiVersion: v1alpha1
+kind: Setting
+metadata:
+  name: styles-settings
+spec:
+  forms:
+    - group: basic
+      label: 样式列表
+      formSchema:
+        - $formkit: checkbox
+          name: enableMacCode
+          label: mac样式代码块
+          value: false
+        - $formkit: checkbox
+          name: enableAutoIncrement
+          label: 标题自动编号
+          value: false

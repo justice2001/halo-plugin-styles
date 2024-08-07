@@ -1,0 +1,29 @@
+*:has(#auto-increment) {
+    counter-reset: h1; /* 初始化h1计数器 */
+}
+
+#auto-increment ~ h1 {
+    counter-reset: h2; /* 初始化h2计数器 */
+}
+
+#auto-increment ~ h2 {
+    counter-reset: h3; /* 初始化h3计数器 */
+}
+
+#auto-increment ~ h1::before {
+    counter-increment: h1;
+    content: counter(h1) ". ";
+    font-weight: bold;
+}
+
+#auto-increment ~ h2::before {
+    counter-increment: h2;
+    content: counter(h1) "." counter(h2) " ";
+    font-weight: bold;
+}
+
+#auto-increment ~ h3::before {
+    counter-increment: h3;
+    content: counter(h1) "." counter(h2) "." counter(h3) " ";
+    font-weight: bold;
+}

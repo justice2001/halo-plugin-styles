@@ -1,0 +1,174 @@
+pre:has(.hljs) {
+    position: relative;
+    border-radius: 10px;
+    background-color: transparent!important;
+    box-shadow: 0 4px 10px 1px rgb(0 0 0 / 20%) !important;
+    overflow: hidden;
+}
+/*语法高亮*/
+pre code.hljs {
+    position: relative;
+    display: block;
+    overflow-x: hidden;
+    padding: 35px 20px 20px 20px!important;
+}
+.hljs::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    overflow: visible;
+    width: 12px;
+    height: 12px;
+    border-radius: 16px;
+    box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+    -webkit-box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+    background-color: #fc625d;
+    white-space: nowrap;
+    text-indent: 75px;
+    font-size: 16px;
+    line-height: 12px;
+    font-weight: 700;
+}
+.hljs::after {
+    content: "JavaScript";
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+.hljs-ln {
+    width: 100%;
+    display: inline-block;
+    overflow-x: auto;
+    padding-bottom: 5px;
+}
+.hljs-ln td {
+    padding: 0;
+}
+.hljs-ln::-webkit-scrollbar {
+    height: 10px;
+    border-radius: 5px;
+    background: #333;
+}
+.hljs-ln::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 5px;
+}
+.hljs-ln::-webkit-scrollbar-thumb:hover {
+    background: #ddd;
+}
+.hljs-ln-n {
+    padding-right: 15px;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.hljs.language-html::after,
+.hljs.language-xml::after {
+    content: "HTML/XML";
+}
+.hljs.language-javascript::after {
+    content: "JavaScript";
+}
+.hljs.language-c::after {
+    content: "C";
+}
+.hljs.language-cpp::after {
+    content: "C++";
+}
+.hljs.language-java::after {
+    content: "Java";
+}
+.hljs.language-asp::after {
+    content: "ASP";
+}
+.hljs.language-actionscript::after {
+    content: "ActionScript/Flash/Flex";
+}
+.hljs.language-bash::after {
+    content: "Bash";
+}
+.hljs.language-css::after {
+    content: "CSS";
+}
+.hljs.language-asp::after {
+    content: "ASP";
+}
+.hljs.language-cs::after,
+.hljs.language-csharp::after {
+    content: "C#";
+}
+.hljs.language-d::after {
+    content: "D";
+}
+.hljs.language-golang::after,
+.hljs.language-go::after {
+    content: "Go";
+}
+.hljs.language-json::after {
+    content: "JSON";
+}
+.hljs.language-lua::after {
+    content: "Lua";
+}
+.hljs.language-less::after {
+    content: "LESS";
+}
+.hljs.language-md::after,
+.hljs.language-markdown::after,
+.hljs.language-mkdown::after,
+.hljs.language-mkd::after {
+    content: "Markdown";
+}
+.hljs.language-mm::after,
+.hljs.language-objc::after,
+.hljs.language-obj-c::after,
+.hljs.language-objective-c::after {
+    content: "Objective-C";
+}
+.hljs.language-php::after {
+    content: "PHP";
+}
+.hljs.language-perl::after,
+.hljs.language-pl::after,
+.hljs.language-pm::after {
+    content: "Perl";
+}
+.hljs.language-python::after,
+.hljs.language-py::after,
+.hljs.language-gyp::after,
+.hljs.language-ipython::after {
+    content: "Python";
+}
+.hljs.language-r::after {
+    content: "R";
+}
+.hljs.language-ruby::after,
+.hljs.language-rb::after,
+.hljs.language-gemspec::after,
+.hljs.language-podspec::after,
+.hljs.language-thor::after,
+.hljs.language-irb::after {
+    content: "Ruby";
+}
+.hljs.language-sql::after {
+    content: "SQL";
+}
+.hljs.language-sh::after,
+.hljs.language-shell::after,
+.hljs.language-Session::after,
+.hljs.language-shellsession::after,
+.hljs.language-console::after {
+    content: "Shell";
+}
+.hljs.language-swift::after {
+    content: "Swift";
+}
+.hljs.language-vb::after {
+    content: "VB/VBScript";
+}
+.hljs.language-yaml::after {
+    content: "YAML";
+}
